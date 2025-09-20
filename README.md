@@ -1,8 +1,7 @@
 <<<<<<< HEAD
-# OpenCv-Projects
-All OpenCV-Projects
-=======
 # 🖼️ OpenCV Projects
+=======
+
 
 A collection of Computer Vision projects built using **OpenCV** and **Python**.  
 Each project explores a different aspect of image processing, object detection, or real-time computer vision applications.
