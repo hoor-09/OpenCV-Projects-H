@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusGuard - Productivity Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FocusGuard 🛡️</h1>
+            <p>AI-Powered Productivity Assistant</p>
+        </header>
+
+        <div class="main-content">
+            <div class="camera-section">
+                <div class="video-container">
+                    <video id="webcam" autoplay playsinline></video>
+                    <div class="metrics-overlay">
+                        <div class="metric" id="score-metric">
+                            <span class="label">Focus Score:</span>
+                            <span class="value" id="score-value">100</span>
+                        </div>
+                        <div class="metric" id="distractions-metric">
+                            <span class="label">Distractions:</span>
+                            <span class="value" id="distractions-value">0</span>
+                        </div>
+                        <div class="metric" id="timer-metric">
+                            <span class="label">Session:</span>
+                            <span class="value" id="timer-value">00:00:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">Start Session</button>
+                    <button id="stop-btn" class="btn btn-secondary" disabled>Stop Session</button>
+                    <button id="reset-btn" class="btn btn-warning">Reset</button>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-card">
+                    <h3>Current Status</h3>
+                    <div id="status-indicator" class="status-indicator focused">
+                        <span>Focused</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Distraction Types</h3>
+                    <div id="distraction-types" class="distraction-list">
+                        <div class="no-distractions">No distractions detected</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alerts-container" id="alerts-container">
+            <!-- Alerts will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
